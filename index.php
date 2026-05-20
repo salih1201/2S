@@ -11,9 +11,9 @@
 <body>
 
   <h1>Welkom</h1>
-  <p>De button hieronder is alleen voor testdoeleinden bij het opstarten van het project. Deze pagina is bedoeld voor de
-    uitleg van jullie escape room.</p>
-  <p>Via deze pagina gaat een team naar de aanmeldpagina</p>
+  <h2>Uitleg van het spel</h2>
+  <p>Welkom bij onze Escape Room! Het doel is simpel: ontsnap door puzzels op te lossen en codes te kraken. Werk samen en wees snel!</p>
+  <p>Gemaakt door: Salih en Sami</p>
 
 
   <button><a href="./rooms/room_1.php">Klik hier voor een demonstratie van kamer
