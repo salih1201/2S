@@ -10,14 +10,32 @@
 
 <body>
 
-  <h1>Welkom</h1>
-  <h2>Uitleg van het spel</h2>
-  <p>Welkom bij onze Escape Room! Het doel is simpel: ontsnap door puzzels op te lossen en codes te kraken. Werk samen en wees snel!</p>
-  <p>Gemaakt door: Salih en Sami</p>
+  <header class="navbar">
+    <div class="nav-left">
+      <div class="logo">Escape room</div>
+      <nav>
+        <a href="#" class="active">Home</a>
+        <a href="#">Scoreboard</a>
+      </nav>
+    </div>
+    <div class="nav-right">
+      <a href="#" class="login-link">Login</a>
+      <a href="#" class="btn btn-primary">Speel Nu</a>
+    </div>
+  </header>
 
-
-  <button><a href="./rooms/room_1.php">Klik hier voor een demonstratie van kamer
-      1</a></button>
+  <main class="hero-section">
+    <div class="hero-content">
+      <h1>MISSIE: OPERATION CYBERHEIST</h1>
+      <p>Rechercheurs, we hebben een noodgeval. De Nationale Bank is gehackt door een onbekende groep. Ze dreigen alle accounts te wissen over 60 minuten. Jullie missie is simpel maar gevaarlijk: Breek in het systeem, los de cyber-puzzels op, ontcijfer de codes en stop de hacker voordat het te laat is. Elke seconde telt. Vertrouw alleen je team. Succes.</p>
+      <div class="hero-buttons">
+        <a href="./rooms/room_1.php" class="btn btn-primary">Aan de Slag <span class="arrow">→</span></a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="./images/images.jpeg" alt="Futuristic Escape Room">
+    </div>
+  </main>
 
 </body>
 

@@ -8,7 +8,7 @@ function openModal(index) {
   let correctAnswer = box.dataset.answer;
 
   // Zet de vraagtekst in het modalvenster
-  document.getElementById('riddle').innerText = riddleText;
+  document.getElementById('question').innerText = riddleText;
 
   // Zet het correcte antwoord in de modal, zodat we het later kunnen vergelijken
   document.getElementById('modal').dataset.answer = correctAnswer;

@@ -2,7 +2,7 @@
 require_once('../dbcon.php');
 
 try {
-  $stmt = $db_connection->query("SELECT * FROM riddles WHERE roomId = 1");
+  $stmt = $db_connection->query("SELECT * FROM question WHERE roomId = 1");
   $riddles = $stmt->fetchAll(PDO::FETCH_ASSOC);
 } catch (PDOException $e) {
   die("Databasefout: " . $e->getMessage());
@@ -15,17 +15,17 @@ try {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Escape Room 3</title>
+  <title>Escape Room 1</title>
   <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
-  <h1>Team: ...</h1>
+  <h1>Team: Salih en Sami</h1>
 
   <div class="container">
     <?php foreach ($riddles as $index => $riddle) : ?>
     <div class="box box<?php echo $index + 1; ?>" onclick="openModal(<?php echo $index; ?>)"
-      data-index="<?php echo $index; ?>" data-riddle="<?php echo htmlspecialchars($riddle['riddle']); ?>"
+      data-index="<?php echo $index; ?>" data-riddle="<?php echo htmlspecialchars($riddle['question']); ?>"
       data-answer="<?php echo htmlspecialchars($riddle['answer']); ?>">
       Box <?php echo $index + 1; ?>
     </div>
@@ -36,7 +36,7 @@ try {
 
   <section class="modal" id="modal">
     <h2>Escape Room Vraag</h2>
-    <p id="riddle"></p>
+    <p id="question"></p>
     <input type="text" id="answer" placeholder="Typ je antwoord">
     <button onclick="checkAnswer()">Verzenden</button>
     <p id="feedback"></p>
