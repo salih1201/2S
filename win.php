@@ -84,8 +84,6 @@
                     <span class="material-symbols-outlined">verified</span>
                     <h2 class="win-seal-text">ACCESS GRANTED</h2>
                 </div>
-                <span class="win-seal-hex win-seal-hex--top">0x7F_STABLE</span>
-                <span class="win-seal-hex win-seal-hex--bottom">V_2.4.0</span>
             </div>
 
             <div class="win-timer-section">
