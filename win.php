@@ -88,7 +88,7 @@
 
             <div class="win-timer-section">
                 <p class="win-timer-label">ELAPSED_TIME</p>
-                <h3 class="win-timer-value" id="timer">42:15:08</h3>
+                <h3 class="win-timer-value" id="timer">--:--:--</h3>
                 <p class="win-timer-status">SYSTEM_STABILIZED // NO_DETECTIONS</p>
             </div>
         </section>
@@ -219,7 +219,7 @@
             <a href="#">MAIN_LOBBY</a>
             <a href="#">REPLAY_COREDUMP</a>
         </div>
-        <div class="win-footer-copy">© 2024 CYBER_OPS</div>
+        <div class="win-footer-copy">© 2026 CYBER_OPS</div>
     </footer>
 
     <!-- Mobile Bottom Nav -->

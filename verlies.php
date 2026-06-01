@@ -88,7 +88,7 @@
 
             <div class="win-timer-section">
                 <p class="win-timer-label">REMAINING_TIME</p>
-                <h3 class="win-timer-value" id="timer">00:00:00</h3>
+                <h3 class="win-timer-value" id="timer">--:--:--</h3>
                 <p class="win-timer-status">SYSTEM_LOCKOUT // SECURITY_BREACH_DETECTED</p>
             </div>
         </section>
@@ -215,7 +215,7 @@
             <a href="index.php">MAIN_LOBBY</a>
             <a href="#">COREDUMP_LOG</a>
         </div>
-        <div class="win-footer-copy">© 2024 CYBER_OPS</div>
+        <div class="win-footer-copy">© 2026 CYBER_OPS</div>
     </footer>
 
     <!-- Mobile Bottom Nav -->
