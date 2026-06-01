@@ -1041,4 +1041,90 @@ body {
     .win-btn {
         width: 100%;
     }
-}
+}
+
+/* ==========================================
+   LOSE PAGE THEME OVERRIDES
+   ========================================== */
+
+.lose-page {
+    --win-cyan: #ff0055; /* Neon Red-Pink */
+    --win-green: #ff3366; /* Hot Red Alert */
+    --win-dark-bg: #0d060a; /* Dark magenta-tinted bg */
+    --win-panel-bg: rgba(25, 12, 20, 0.8);
+    --win-border: rgba(255, 0, 85, 0.15);
+    --win-border-glow: rgba(255, 0, 85, 0.4);
+    --win-text: #a8929d;
+    --win-text-light: #fbeff4;
+
+    background: var(--win-dark-bg);
+    color: var(--win-text-light);
+}
+
+/* Red bg grid override */
+.lose-page .win-bg-grid {
+    background-image: 
+        linear-gradient(rgba(255, 0, 85, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 0, 85, 0.03) 1px, transparent 1px);
+}
+
+/* Red seal overrides */
+.lose-page .win-seal-glow {
+    background: radial-gradient(circle, rgba(255, 0, 85, 0.2) 0%, transparent 70%);
+}
+.lose-page .win-seal {
+    box-shadow: 
+        0 0 30px rgba(255, 0, 85, 0.2),
+        inset 0 0 20px rgba(255, 0, 85, 0.1);
+}
+
+/* Red button overrides */
+.lose-page .win-btn--cyan {
+    box-shadow: 0 0 15px rgba(255, 0, 85, 0.3);
+}
+.lose-page .win-btn--outline-cyan {
+    box-shadow: 0 0 10px rgba(255, 0, 85, 0.1);
+}
+.lose-page .win-btn--outline-cyan:hover {
+    background: rgba(255, 0, 85, 0.1);
+    box-shadow: 0 0 20px rgba(255, 0, 85, 0.3);
+}
+.lose-page .win-btn--outline-green {
+    box-shadow: 0 0 10px rgba(255, 0, 85, 0.1);
+}
+.lose-page .win-btn--outline-green:hover {
+    background: rgba(255, 0, 85, 0.1);
+    box-shadow: 0 0 20px rgba(255, 0, 85, 0.3);
+}
+
+/* Sidebar item overrides */
+.lose-page .win-sidebar-item:hover {
+    background: rgba(255, 0, 85, 0.05);
+}
+.lose-page .win-sidebar-item.active {
+    background: rgba(255, 0, 85, 0.1);
+    box-shadow: inset 0 0 10px rgba(255, 0, 85, 0.1);
+}
+
+/* Timer and header shadow overrides */
+.lose-page .win-timer-value {
+    text-shadow: 0 0 25px rgba(255, 0, 85, 0.6);
+}
+.lose-page .win-topbar-title {
+    text-shadow: 0 0 8px rgba(255, 0, 85, 0.5);
+}
+.lose-page .win-stat-card:hover {
+    box-shadow: 
+        0 15px 35px rgba(0, 0, 0, 0.5),
+        0 0 15px rgba(255, 0, 85, 0.1);
+}
+.lose-page .win-stat-hex {
+    color: rgba(255, 0, 85, 0.4);
+}
+.lose-page .win-progress {
+    border: 1px solid rgba(255, 0, 85, 0.1);
+}
+.lose-page .win-stat-card-overlay {
+    background: linear-gradient(180deg, rgba(255, 0, 85, 0.02) 0%, transparent 100%);
+}
+
