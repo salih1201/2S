@@ -1127,4 +1127,161 @@ body {
 .lose-page .win-stat-card-overlay {
     background: linear-gradient(180deg, rgba(255, 0, 85, 0.02) 0%, transparent 100%);
 }
+
+/* ==========================================
+   ROOM 1 INTERACTIVE NODE STYLES
+   ========================================== */
+
+.node-card {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.node-card.solved {
+    border-color: var(--win-green);
+    box-shadow: 
+        0 10px 30px rgba(0, 0, 0, 0.4),
+        0 0 10px rgba(57, 255, 20, 0.05);
+}
+
+.node-card.solved:hover {
+    border-color: var(--win-green);
+    box-shadow: 
+        0 15px 35px rgba(0, 0, 0, 0.5),
+        0 0 20px rgba(57, 255, 20, 0.2);
+    transform: translateY(-4px);
+}
+
+/* Modal and Overlay Styling */
+.node-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(5, 8, 17, 0.85);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    z-index: 999;
+    animation: fadeIn 0.3s ease;
+}
+
+.node-modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.9);
+    width: 90%;
+    max-width: 500px;
+    background: rgba(10, 17, 30, 0.95);
+    border: 1px solid var(--win-cyan);
+    box-shadow: 0 0 30px rgba(0, 240, 255, 0.2);
+    border-radius: 12px;
+    padding: 32px;
+    z-index: 1000;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    animation: modalShow 0.3s forwards cubic-bezier(0.1, 0.8, 0.3, 1);
+}
+
+.node-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--win-border);
+    padding-bottom: 16px;
+    margin-bottom: 20px;
+}
+
+.node-modal-title {
+    font-family: var(--win-font-sans);
+    font-size: 15px;
+    font-weight: 800;
+    color: var(--win-cyan);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.node-modal-close {
+    background: none;
+    border: none;
+    color: var(--win-text);
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.node-modal-close:hover {
+    color: #ef4444;
+}
+
+.node-modal-question {
+    font-family: var(--win-font-sans);
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--win-text-light);
+    margin-bottom: 24px;
+}
+
+.node-modal-input {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid var(--win-border);
+    border-radius: 6px;
+    padding: 14px 16px;
+    color: var(--win-text-light);
+    font-family: var(--win-font-mono);
+    font-size: 14px;
+    margin-bottom: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.node-modal-input:focus {
+    border-color: var(--win-cyan);
+    box-shadow: 0 0 10px rgba(0, 240, 255, 0.2);
+}
+
+.node-modal-btn {
+    width: 100%;
+    padding: 14px;
+    background: var(--win-cyan);
+    color: var(--win-dark-bg);
+    border: none;
+    border-radius: 6px;
+    font-family: var(--win-font-sans);
+    font-size: 13px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 0.3s;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.node-modal-btn:hover {
+    box-shadow: 0 0 15px var(--win-cyan);
+    transform: translateY(-1px);
+}
+
+.node-modal-feedback {
+    font-family: var(--win-font-mono);
+    font-size: 12px;
+    margin-top: 16px;
+    text-align: center;
+    min-height: 18px;
+    letter-spacing: 0.5px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes modalShow {
+    to {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
 

@@ -1,5 +1,5 @@
 <?php
-require_once('../dbcon.php');
+require_once __DIR__ . '/../dbcon.php';
 
 try {
   $stmt = $db_connection->query("SELECT * FROM riddles WHERE roomId = 3");
