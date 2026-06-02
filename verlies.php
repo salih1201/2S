@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
 </head>
 
-<body class="lose-page">
+<body class="win-page lose-page">
 
     <!-- HUD Background Effects -->
     <div class="win-bg-grid"></div>

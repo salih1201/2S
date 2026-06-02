@@ -272,6 +272,14 @@ body {
     position: relative;
 }
 
+.lose-page {
+    --win-cyan: #ff6a6a;
+    --win-green: #ef4444;
+    --win-border-glow: rgba(239, 68, 68, 0.35);
+    --win-text: #f7c3c3;
+    --win-text-light: #ffe8e8;
+}
+
 /* HUD Grid & Scanline Backgrounds */
 .win-bg-grid {
     position: fixed;
@@ -1284,4 +1292,4 @@ body {
     }
 }
 
-
+
